@@ -12,8 +12,10 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
+		"lint:stage": "lint-staged",
 		"lint:fix": "eslint . --fix",
 		"preview": "vite preview",
+		"check": "tsno run ./scripts/check.ts",
 		"prepare": "husky",
 		"commit": "git-cz",
 		"spellcheck": "cspell \"**/*.{tsx,ts,jsx,js,json,md}\""
@@ -52,8 +54,10 @@
 		"husky": "^9.1.4",
 		"inquirer": "^9.3.6",
 		"lint-staged": "^15.2.8",
-		"typescript": "^5.5.3",
+		"tsno": "^2.0.0",
+		"typescript": "^5.5.4",
 		"typescript-eslint": "^8.0.0",
-		"vite": "^5.4.0"
+		"vite": "^5.4.0",
+		"zx": "^8.1.4"
 	}
 }
