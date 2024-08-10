@@ -2,10 +2,11 @@
 
 import type { ProcessOutput } from 'zx'
 import { $ } from 'zx'
-import { printObject } from './utils'
+import { log, printObject } from './utils'
 
+// check spelling
 await $`pnpm spellcheck`.catch((out: ProcessOutput) => {
-	console.log(out)
+	log.error('Please fix the spelling errors', out.stdout)
 	throw new Error(out.stdout)
 })
 
