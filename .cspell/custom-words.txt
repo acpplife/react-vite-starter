@@ -1,5 +1,6 @@
 commitlint
 conventionalcommits
+stylelint
 tseslint
 tsno
 wangzhichang
