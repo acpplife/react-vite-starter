@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import { ProcessOutput } from 'zx/core'
 
 export function printObject(

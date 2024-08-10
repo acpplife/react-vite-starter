@@ -1,5 +1,4 @@
 // #!/usr/bin/env zx
-/* eslint-disable no-console */
 
 import type { ProcessOutput } from 'zx'
 import { $ } from 'zx'

@@ -15,25 +15,18 @@ export default tseslint.config({
 		globals: globals.browser,
 		parserOptions: {
 			project: ['./tsconfig.json'],
-			tsconfigRootDir: import.meta.dirname,
-		},
+			tsconfigRootDir: import.meta.dirname
+		}
 	},
 	plugins: {
 		react,
 		'react-hooks': reactHooks,
-		'react-refresh': reactRefresh,
+		'react-refresh': reactRefresh
 	},
 	rules: {
 		...react.configs.recommended.rules,
 		...react.configs['jsx-runtime'].rules,
 		...reactHooks.configs.recommended.rules,
-		'react-refresh/only-export-components': [
-			'warn',
-			{ allowConstantExport: true },
-		],
-		// no console
-		'no-console': 'error',
-		// no debugger
-		'no-debugger': 'error',
-	},
+		'react-refresh/only-export-components': ['warn', { allowConstantExport: true }]
+	}
 })
