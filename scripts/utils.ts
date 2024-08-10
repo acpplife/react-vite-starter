@@ -1,4 +1,3 @@
- 
 import { ProcessOutput } from 'zx/core'
 
 /**
@@ -15,6 +14,7 @@ export function printObject(
 	}
 }
 
+// colors for log messages
 const colors = {
 	blue: '\x1b[34m',
 	green: '\x1b[32m',
@@ -23,10 +23,14 @@ const colors = {
 	reset: '\x1b[0m'
 }
 
+// log message with color
 const logMessage = (color: string, ...message: string[]) => {
 	console.log(`${color}${message.join(' ')}${colors.reset}`)
 }
 
+/**
+ * Log messages with different colors
+ */
 export const log = {
 	info: (...message: string[]) => logMessage(colors.blue, ...message),
 	success: (...message: string[]) => logMessage(colors.green, ...message),
