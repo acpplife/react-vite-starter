@@ -8,4 +8,6 @@ await import('./check').catch((out: string) => {
 	throw new Error('Code quality check failed, please check the code')
 })
 
-log.success('\nCheck passed, committing...\n')
+log.success(
+	'\nCongratulations! Your code quality is good, now is in the process of committing...\n'
+)
