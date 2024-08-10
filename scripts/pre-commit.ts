@@ -10,6 +10,6 @@ await import('./check').catch((out) => {
 	throw new Error('代码质量评估失败, 请检查代码')
 })
 
-console.log('printf "检测通过, 创建 commit 中...\n')
+console.log('检测通过, 创建 commit 中...\n')
 
 await $`git add .`
