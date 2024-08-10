@@ -20,7 +20,6 @@
 		"check": "tsno run ./scripts/check.ts",
 		"prepare": "husky",
 		"commit": "git add . & git-cz",
-		"commitlint": "commitlint --edit",
 		"spellcheck": "cspell \"**/*.{tsx,ts,jsx,js,json,md}\""
 	},
 	"config": {
