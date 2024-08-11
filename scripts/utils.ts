@@ -32,6 +32,7 @@ const logMessage = (color: string, ...message: string[]) => {
  * Log messages with different colors
  */
 export const log = {
+	log: (...message: string[]) => logMessage(colors.reset, ...message),
 	info: (...message: string[]) => logMessage(colors.blue, ...message),
 	success: (...message: string[]) => logMessage(colors.green, ...message),
 	warn: (...message: string[]) => logMessage(colors.yellow, ...message),

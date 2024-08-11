@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ['@commitlint/config-conventional'], // extends can be nested
+	extends: ['@commitlint/config-conventional'],
 	parserPreset: 'conventional-changelog-conventionalcommits',
 	prompt: {
 		settings: {},

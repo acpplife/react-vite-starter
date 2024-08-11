@@ -1,5 +1,9 @@
 commitlint
 conventionalcommits
+Immer
+localforage
+reactrouter
+reduxjs
 stylelint
 tseslint
 tsno

@@ -1,0 +1,29 @@
+{
+	"settings": { "react": { "version": "18.3" } },
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended"
+	],
+	"ignorePatterns": ["dist", "vite.config.ts", "scripts"],
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"parser": "@typescript-eslint/parser"
+	},
+	"plugins": ["@typescript-eslint", "react", "react-hooks", "react-refresh"],
+	"rules": {
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
+		"@typescript-eslint/no-explicit-any": "off"
+	},
+	"globals": {
+		"browser": "readonly"
+	},
+	"overrides": [
+		{
+			"files": ["src/**/*.{ts,tsx}"]
+		}
+	]
+}
