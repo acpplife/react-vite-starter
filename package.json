@@ -19,6 +19,7 @@
 		"preview": "vite preview",
 		"check": "tsno run ./scripts/check.ts",
 		"prepare": "husky",
+		"pre-commit": "pnpm check",
 		"commit": "git add . & git-cz",
 		"spellcheck": "cspell \"**/*.{tsx,ts,jsx,js,json,md}\""
 	},
